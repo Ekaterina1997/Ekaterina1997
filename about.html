@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="about.css" rel="stylesheet">
+  <title>Tip Giver</title>
+  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+  
+</head>
+<body>
+    
+  <div class="header">
+    <div class="layout-positioner">
+      <strong>Tip Giver</strong>
+    </div>
+  </div> 
+    
+    <div class="about-box">
+      <p>blablabla</p>
+      <p>blablabla</p>
+      
+      <strong><a class="registration" title="Нажмите, чтобы зарегистрироваться">Регистрация</a>
+      <a href="javascript:PopUpShow()" class="entry" title="Нажмите, если Вы уже зарегистрированы">Войти</a></strong>
+    </div>
+  
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      
+      <a href="javascript:PopUpHide()" class="close"></a>
+      <div class="photo"><img src="http://m.clipmass.com/m/images/user.png"></div>
+      <form action="<!--адрес отправки формы-->" method="post">
+        <input type="text" id="telephone" placeholder="Номер телефона" required autofocus>
+        <input type="password" id="password" placeholder="Пароль" required>
+        <input type="submit" value="Войти" id="vhod">
+      </form>
+    </div></div>
+    
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
+    
+</body>

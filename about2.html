@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="about.css" rel="stylesheet">
+  <title>Tip Giver</title>
+  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+  
+</head>
+<body>
+    
+  <div class="header">
+    <div class="layout-positioner">
+      <strong>Tip Giver</strong>
+    </div>
+  </div> 
+    
+    <div class="about-box">
+      <p>blablabla</p>
+      <p>blablabla</p>
+      
+      <strong><a href="javascript:PopUpShow1()" class="registration" title="Нажмите, чтобы зарегистрироваться">Регистрация</a>
+      <a href="javascript:PopUpShow2()" class="entry" title="Нажмите, если Вы уже зарегистрированы">Войти</a></strong>
+    </div>
+  
+    <div class="popup" id="popup1">
+    <div class="popup-content1">
+      <a href="javascript:PopUpHide1()" class="close"></a>
+      <div class="photo2"><img src="http://m.clipmass.com/m/images/user.png"></div>
+      <form action="<!--адрес отправки формы-->" method="post" enctype="multipart/form-data" target="upload" onsubmit="hideBtn();">
+        <div class="download"><input type="file" id="file" name="file" accept="image/*"></div>
+        <!--<input type="submit" id="submit" name="submit" value="Добавить фото">-->
+      </form> <!--<div id="res"></div><iframe id="upload" name="upload" style="display: none"></iframe>-->
+      <div class="infocolumn">
+      <form action="<!--адрес отправки формы-->" method="post">
+        <input type="text" id="telephone2" placeholder="Номер телефона" required>
+        <input type="text" id="password2" placeholder="Пароль">
+        <input type="text" id="username" placeholder="Имя пользователя">
+        <input type="text" id="placework" placeholder="Место работы">
+      </form>
+      </div>
+      <div ><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d34919.886554766075!2d60.6071299!3d56.8374886!3m2!1i1024!2i768!4f13.1!2m1!1z0YDQtdGB0YLQvtGA0LDQvdGLINC4INC60LDRhNC1!5e0!3m2!1sru!2sru!4v1478968405140" allowfullscreen></iframe></div>
+      <form action="<!--адрес отправки формы-->" method="post">
+        <input type="submit" id="zareg" value="Зарегистрироваться">
+      </form>
+    </div>
+  </div>
+  
+     
+  <div class="popup" id="popup2">
+    <div class="popup-content2">
+      <a href="javascript:PopUpHide2()" class="close"></a>
+      <div class="photo"><img src="http://m.clipmass.com/m/images/user.png"></div>
+      <form action="<!--адрес отправки формы-->" method="post">
+        <input type="text" id="telephone" placeholder="Номер телефона" required autofocus>
+        <input type="password" id="password" placeholder="Пароль" required>
+        <input type="submit" value="Войти" id="vhod">
+      </form>
+    </div>
+  </div>
+    
+  
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide1();
+    });
+      $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide2();
+    });
+    //Функция отображения PopUp
+    function PopUpShow1(){
+        $("#popup1").show();
+    }
+      function PopUpShow2(){
+        $("#popup2").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide1(){
+        $("#popup1").hide();
+    }
+      function PopUpHide2(){
+        $("#popup2").hide();
+    }
+</script>
+  
+</body>

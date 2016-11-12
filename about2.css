@@ -1,5 +1,5 @@
 body {
-  font-family: "Palatino Linotype" serif;
+  font-family: "Palatino Linotype", Serif;
   margin: 0;
   padding: 0;
 }
@@ -93,7 +93,58 @@ a{
   position:fixed;
   top:0px;
 }
-.popup-content{
+
+.popup-content1{
+  margin:250px auto 0px auto;
+  width:600px;
+  height: 485px;
+  background-color: #F6F4F1;
+  border:2px solid;
+  padding: 20px 20px;
+}
+
+.photo2{
+  width: 130px;
+  height: 180px;
+  float: left;
+  margin-left: 50px;
+}
+
+.download{
+  float: left;
+  margin-top: 180px;
+  margin-left: -135px;
+}
+
+.infocolumn{
+  float: right;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+#telephone2, #password2, #username, #placework{
+  display: block;
+  width: 220px;
+  height: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.map{
+  width: 505px;
+  height: 220px;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+#zareg{
+  margin-left: 227px;
+  margin-top: 10px;
+  width: 145px;
+  height: 30px;
+  
+}
+
+.popup-content2{
   margin:260px auto 0px auto;
   width:300px;
   height: 380px;
@@ -134,60 +185,4 @@ img{
   cursor: pointer;
   float: right;
   margin-right: 10px;
-}
-  border-bottom: 3px solid black;
-  font-size: 100px;
-  padding-top: 50px;
-  text-align: center;
-  background-color: #FF8D21;
-  color: white;
-  height: 170px;
-  margin-bottom: 20px;
-}
-
-.about-box{
-  border: 3px solid;
-  margin: 0 auto;
-  width: 700px;
-  height: 500px;
-  padding: 30px 80px 0px;
-  background-color: #F6BF8B;
-  margin-bottom: 30px;
-}
-
-.registration, .entry{
-  display: block;
-  border-radius: 7px;
-  padding: 5px;
-  color: black;
-  background: linear-gradient(to top, #F7A841, #FFBE69);
-  width: 100px;
-  text-align: center;
-  margin-top: 350px;
-  cursor: pointer;
-  box-shadow: 2px 4px 3px #462A05;
-}
-.registration:hover {
-  background: linear-gradient(to top, #FF8D21, #F7B661);
-  
-}
-.entry:hover {
-  background: linear-gradient(to top, #FF8D21, #F7B661);
-}
-.registration:active {
-  background: linear-gradient(to bottom, #FF8D21, #F7B661);
-  box-shadow: none;
-}
-.entry:active {
-  background: linear-gradient(to bottom, #FF8D21, #F7B661);
-  box-shadow: none;
-}
-.registration{
-  float: left;
-  margin-left: 50px;
-  
-}
-.entry{
-  float: right;
-  margin-right: 50px;
 }
